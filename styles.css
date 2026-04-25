@@ -1,0 +1,79 @@
+*{margin:0;padding:0;box-sizing:border-box}
+padding:160px 0;
+background:url('assets/vibe2.jpg') center/cover fixed;
+position:relative;
+}
+.banner-inner{text-align:center}
+.banner-inner h2{margin-bottom:18px}
+
+.hours-wrap{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+gap:30px;
+}
+.hours-box ul{list-style:none;margin-top:20px}
+.hours-box li{padding:8px 0}
+
+.site-footer{
+padding:70px 0;
+border-top:1px solid rgba(255,255,255,.08)
+}
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+.footer-logo{width:110px}
+
+.page-hero{
+padding:180px 0 100px;
+}
+.small-hero{padding-bottom:60px}
+.menu-layout{
+display:grid;
+gap:30px;
+}
+.menu-item{
+display:flex;
+justify-content:space-between;
+padding:18px 0;
+border-bottom:1px solid rgba(255,255,255,.07)
+}
+.menu-section h2{margin-bottom:24px}
+.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+.map-placeholder{
+border:1px solid rgba(212,165,58,.2);
+border-radius:24px;
+padding:60px;
+}
+.lux-list{margin:30px 0 40px;padding-left:18px}
+.lux-list li{margin-bottom:10px}
+
+.reveal{opacity:0;transform:translateY(30px);transition:1s}
+.reveal.active{opacity:1;transform:none}
+.fade-up{animation:fadeUp 1.2s ease}
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(40px)}
+to{opacity:1;transform:none}
+}
+
+@media(max-width:900px){
+.split-grid,.contact-grid,.footer-grid{grid-template-columns:1fr}
+.nav-links{
+display:none;
+position:absolute;
+right:20px;
+top:90px;
+background:#111;
+flex-direction:column;
+padding:30px;
+border-radius:18px
+}
+.nav-links.open{display:flex}
+.mobile-toggle{display:block}
+h1{font-size:58px}
+}
