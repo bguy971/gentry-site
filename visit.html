@@ -1,49 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <title>Visit The Gentry</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+<div class="grain"></div>
+
 <header class="site-header">
 <div class="container nav-wrap">
+
 <a href="index.html" class="brand">
-<img src="assets/logo.png">
+<img src="assets/logo.png" alt="">
 </a>
+
+<nav>
+
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="experience.html">Domes</a></li>
+<li><a href="about.html">Story</a></li>
+<li><a href="visit.html">Visit</a></li>
+<li>
+<a href="tel:4239630513"
+class="nav-cta">
+Call Now
+</a>
+</li>
+</ul>
+
+<button id="mobileToggle" class="mobile-toggle">
+☰
+</button>
+
+</nav>
 </div>
 </header>
 
-<section class="page-hero">
-<div class="container center">
-<h1>Visit The Gentry</h1>
-<p>423.963.0513</p>
-</div>
-</section>
 
-<section class="section">
-<div class="container contact-grid">
 
-<div class="hours-box">
-<h3>Hours</h3>
 
-<p>Wed-Thu 4-9</p>
-<p>Fri 11-2 / 4-9</p>
-<p>Sat 12-9</p>
+<section class="visit-hero">
 
-<a href="tel:4239630513" class="btn btn-gold">
-Call Now
+<div class="hero-overlay"></div>
+
+<div class="container hero-content center">
+
+<p class="eyebrow fade-up">
+PLAN YOUR EVENING
+</p>
+
+<h1 class="fade-up delay1">
+Visit The Gentry
+</h1>
+
+<p class="hero-copy fade-up delay2">
+Wood-fired dining, glowing patios and private dome evenings await.
+</p>
+
+<a href="tel:4239630513"
+class="btn btn-gold fade-up delay3">
+Call 423.963.0513
 </a>
 
 </div>
 
-<div class="map-placeholder">
-<h3>Add Google Map Embed Here</h3>
+</section>
+
+
+
+
+
+<section class="section">
+
+<div class="container concierge-grid">
+
+
+
+<div class="concierge-card reveal">
+
+<p class="eyebrow">
+LOCATION
+</p>
+
+<h2>
+Downtown Destination
+</h2>
+
+<p>
+Add full address here once confirmed.
+Embed Google Maps below if desired.
+</p>
+
+<div class="map-lux">
+Map Embed Placeholder
 </div>
 
 </div>
+
+
+
+
+
+<div class="concierge-card reveal">
+
+<p class="eyebrow">
+HOURS
+</p>
+
+<h2>
+When To Visit
+</h2>
+
+<ul class="lux-hours">
+<li>Wednesday–Thursday 4–9 PM</li>
+<li>Friday 11–2 / 4–9</li>
+<li>Saturday 12–9</li>
+<li>Sunday–Tuesday Closed</li>
+</ul>
+
+<div class="hours-divider"></div>
+
+<h4>Takeout</h4>
+
+<ul class="lux-hours">
+<li>Wed–Thu 4–8 PM</li>
+<li>Friday 11–2 / 4–8</li>
+<li>Saturday 12–8</li>
+</ul>
+
+</div>
+
+
+</div>
+
 </section>
+
+
+
+
+
+<section class="dark-section section">
+
+<div class="container">
+
+<div class="section-heading center">
+<p class="eyebrow">
+PLAN YOUR NIGHT
+</p>
+
+<h2>
+A Few Good Reasons To Stay Late
+</h2>
+</div>
+
+
+<div class="visit-grid">
+
+<div class="visit-card reveal">
+<span>01</span>
+<h3>Patio Evenings</h3>
+<p>
+Fire pits and downtown atmosphere.
+</p>
+</div>
+
+
+<div class="visit-card reveal">
+<span>02</span>
+<h3>Private Domes</h3>
+<p>
+Ask about availability.
+</p>
+</div>
+
+
+<div class="visit-card reveal">
+<span>03</span>
+<h3>Wood Fired Dining</h3>
+<p>
+Crafted flavors worth coming for.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="immersive-photo visit-banner">
+
+<div class="overlay-dark"></div>
+
+<div class="container immersive-copy">
+
+<p class="eyebrow">
+CONCIERGE STYLE CONTACT
+</p>
+
+<h2>
+Questions?<br>
+Call Directly.
+</h2>
+
+<p>
+For takeout, dome availability or general questions.
+</p>
+
+<a href="tel:4239630513"
+class="btn btn-gold">
+423.963.0513
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="section center">
+
+<div class="container narrow">
+
+<p class="eyebrow">
+THE GENTRY
+</p>
+
+<h2>
+Come For Dinner.<br>
+Stay For The Night.
+</h2>
+
+<p>
+An evening destination built around fire, flavor and atmosphere.
+</p>
+
+<a href="menu.html"
+class="btn btn-gold">
+View Menu
+</a>
+
+</div>
+
+</section>
+
+
+
+
+<footer class="lux-footer">
+
+<div class="container footer-grid">
+
+<div>
+<img src="assets/logo.png"
+class="footer-logo">
+</div>
+
+<div>
+<h4>Phone</h4>
+<p>423.963.0513</p>
+</div>
+
+<div>
+<h4>Visit</h4>
+<p>Downtown dining destination</p>
+</div>
+
+</div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
