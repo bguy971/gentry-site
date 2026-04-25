@@ -4,12 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<title>Dome Experience | The Gentry</title>
+<title>Private Dome Experience | The Gentry</title>
+<meta name="description" content="Private heated dome dining at The Gentry. Cozy firelit downtown dining for memorable evenings.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,18 +18,26 @@
 
 <div class="grain"></div>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
+
 <div class="container nav-wrap">
 
 <a href="index.html" class="brand">
-<img src="assets/logo.png" alt="">
+<img src="assets/logo.png" alt="The Gentry">
 </a>
 
 <nav>
+
+<button id="mobileToggle" class="mobile-toggle" aria-label="Open Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
 <ul class="nav-links" id="navLinks">
 <li><a href="index.html">Home</a></li>
 <li><a href="menu.html">Menu</a></li>
-<li><a href="experience.html">Domes</a></li>
+<li><a class="active" href="experience.html">Domes</a></li>
 <li><a href="about.html">Story</a></li>
 <li><a href="visit.html">Visit</a></li>
 <li>
@@ -38,13 +47,11 @@ Call Now
 </li>
 </ul>
 
-<button id="mobileToggle" class="mobile-toggle">
-☰
-</button>
-
 </nav>
 </div>
+
 </header>
+
 
 
 
@@ -53,19 +60,19 @@ Call Now
 
 <div class="hero-overlay"></div>
 
-<div class="hero-content container center">
+<div class="container hero-content center">
 
 <p class="eyebrow fade-up">
-PRIVATE DINING EXPERIENCE
+PRIVATE DOME DINING
 </p>
 
 <h1 class="fade-up delay1">
-Private Domes<br>
-Under Firelight
+Reserve The Feeling.<br>
+Not Just A Table.
 </h1>
 
 <p class="hero-copy fade-up delay2">
-An intimate downtown dining experience designed for evenings that feel different.
+Warm private domes, wood-fired dining and firelit atmosphere designed for evenings worth remembering.
 </p>
 
 <a href="tel:4239630513"
@@ -86,14 +93,15 @@ Call For Availability
 <div class="container editorial-grid">
 
 <div class="editorial-image reveal">
-<img src="assets/vibe2.jpg">
+<img src="assets/vibe2.jpg"
+alt="Private dome dining">
 </div>
 
 
 <div class="editorial-copy reveal">
 
 <p class="eyebrow">
-THE DOME EXPERIENCE
+THE EXPERIENCE
 </p>
 
 <h2>
@@ -102,12 +110,15 @@ Of Downtown
 </h2>
 
 <p>
+The domes have become one of The Gentry's most talked about experiences.
 Warm lighting.
-Private enclosed domes.
+Private seating.
 Wood-fired food.
-Fire pit ambiance.
+A little escape inside downtown.
+</p>
 
-The kind of setting that turns dinner into a memory.
+<p>
+It feels intimate without feeling formal — elevated, but relaxed.
 </p>
 
 </div>
@@ -125,41 +136,53 @@ The kind of setting that turns dinner into a memory.
 <div class="container">
 
 <div class="section-heading center">
+
 <p class="eyebrow">
 PERFECT FOR
 </p>
 
 <h2>
-Made For Evenings Worth Keeping
+Built For Special Nights
 </h2>
+
 </div>
 
 
 <div class="experience-grid-lux">
 
+
 <div class="experience-card reveal">
 <span>01</span>
 <h3>Date Nights</h3>
 <p>
-Private, cozy and unforgettable.
+Warm, private and genuinely memorable.
 </p>
 </div>
 
 
 <div class="experience-card reveal">
 <span>02</span>
-<h3>Small Gatherings</h3>
+<h3>Birthdays</h3>
 <p>
-Perfect for intimate celebrations.
+A more personal way to celebrate.
 </p>
 </div>
 
 
 <div class="experience-card reveal">
 <span>03</span>
+<h3>Small Gatherings</h3>
+<p>
+Perfect for intimate evenings with friends.
+</p>
+</div>
+
+
+<div class="experience-card reveal">
+<span>04</span>
 <h3>Seasonal Dining</h3>
 <p>
-A cold weather favorite.
+Especially loved in cooler months.
 </p>
 </div>
 
@@ -184,15 +207,13 @@ THE GENTRY NIGHTS
 </p>
 
 <h2>
-Designed To Feel Different
+Fire Pits.<br>
+Glowing Domes.<br>
+Downtown Energy.
 </h2>
 
 <p>
-Fire pits glowing.
-Music drifting.
-Domes lit at dusk.
-
-A boutique dining experience hidden downtown.
+The kind of setting people end up talking about after dinner.
 </p>
 
 </div>
@@ -207,26 +228,29 @@ A boutique dining experience hidden downtown.
 
 <div class="container split-grid">
 
+
 <div class="split-copy reveal">
 
 <p class="eyebrow">
-WHY GUESTS LOVE IT
+WHAT MAKES IT DIFFERENT
 </p>
 
 <h2>
-More Than A Table
+More Than<br>
+Private Seating
 </h2>
 
 <ul class="lux-list">
 <li>Private heated dome seating</li>
-<li>Wood fired dining</li>
-<li>Downtown courtyard atmosphere</li>
-<li>Great for special evenings</li>
+<li>Wood-fired dining service</li>
+<li>Fire pit courtyard atmosphere</li>
+<li>Ideal for special occasions</li>
+<li>One of downtown's most unique dining experiences</li>
 </ul>
 
 <a href="tel:4239630513"
 class="btn btn-gold">
-Call About Availability
+Ask About Availability
 </a>
 
 </div>
@@ -234,7 +258,59 @@ Call About Availability
 
 
 <div class="split-photo reveal">
-<img src="assets/vibe.jpg">
+<img src="assets/vibe.jpg"
+alt="Dome ambiance">
+</div>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="section dark-section">
+
+<div class="container">
+
+<div class="section-heading center">
+<p class="eyebrow">
+HOW IT WORKS
+</p>
+
+<h2>
+Simple To Reserve
+</h2>
+</div>
+
+
+<div class="experience-grid-lux">
+
+<div class="experience-card reveal">
+<span>01</span>
+<h3>Call Ahead</h3>
+<p>
+Check dome availability by phone.
+</p>
+</div>
+
+<div class="experience-card reveal">
+<span>02</span>
+<h3>Choose Your Evening</h3>
+<p>
+Plan a casual night out or special occasion.
+</p>
+</div>
+
+<div class="experience-card reveal">
+<span>03</span>
+<h3>Show Up Hungry</h3>
+<p>
+We’ll handle the atmosphere.
+</p>
+</div>
+
 </div>
 
 </div>
@@ -254,12 +330,12 @@ EXPERIENCE THE GENTRY
 </p>
 
 <h2>
-Reserve The Feeling.<br>
-Not Just A Table.
+Some Tables Serve Dinner.<br>
+These Create A Night.
 </h2>
 
 <p>
-Call to ask about dome availability and make the night memorable.
+Call ahead and ask about private dome availability.
 </p>
 
 <a href="tel:4239630513"
@@ -281,24 +357,29 @@ class="btn btn-gold">
 
 <div>
 <img src="assets/logo.png"
-class="footer-logo">
+class="footer-logo"
+alt="The Gentry">
 </div>
 
 <div>
 <h4>Availability</h4>
-<p>Call Ahead Recommended</p>
+<p>
+Call Ahead Recommended
+</p>
 </div>
 
 <div>
 <h4>Phone</h4>
-<p>423.963.0513</p>
+<p>
+<a href="tel:4239630513">
+423.963.0513
+</a>
+</p>
 </div>
 
 </div>
 
 </footer>
-
-
 
 <script src="script.js"></script>
 

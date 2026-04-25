@@ -3,12 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Wood Fired Menu | The Gentry</title>
+
+<title>Menu | The Gentry</title>
+<meta name="description" content="Wood-fired pizzas, wings, starters, desserts and takeout at The Gentry.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -16,7 +18,7 @@
 
 <div class="grain"></div>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
 <div class="container nav-wrap">
 
 <a href="index.html" class="brand">
@@ -24,17 +26,27 @@
 </a>
 
 <nav>
+
+<button id="mobileToggle" class="mobile-toggle" aria-label="Open menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
 <ul class="nav-links" id="navLinks">
 <li><a href="index.html">Home</a></li>
-<li><a href="menu.html">Menu</a></li>
+<li><a class="active" href="menu.html">Menu</a></li>
 <li><a href="experience.html">Domes</a></li>
 <li><a href="about.html">Story</a></li>
 <li><a href="visit.html">Visit</a></li>
-<li><a href="tel:4239630513" class="nav-cta">Call Now</a></li>
+<li>
+<a href="tel:4239630513" class="nav-cta">
+Call Now
+</a>
+</li>
 </ul>
-<button id="mobileToggle" class="mobile-toggle">☰</button>
-</nav>
 
+</nav>
 </div>
 </header>
 
@@ -42,15 +54,15 @@
 <section class="menu-hero page-hero center">
 <div class="container narrow">
 
-<p class="eyebrow">
-ALL PRICES INCLUDE SALES TAX
+<p class="eyebrow fade-up">
+WOOD-FIRED KITCHEN
 </p>
 
-<h1>
+<h1 class="fade-up delay1">
 The Full Menu
 </h1>
 
-<p>
+<p class="hero-copy fade-up delay2">
 Wood-fired classics, wings, starters and sweet endings.
 </p>
 
@@ -66,109 +78,110 @@ Wood-fired classics, wings, starters and sweet endings.
 
 <div class="section-heading center">
 <p class="eyebrow">
-SIGNATURE FLAMES
+SIGNATURE PIZZAS
 </p>
 
-<h2>Main Flames</h2>
-
+<h2>
+Wood-Fired Favorites
+</h2>
 </div>
-
 
 
 <div class="premium-menu-grid">
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">01</div>
 <h3>Southern Cheese</h3>
-<p>Signature red sauce and creamy mozzarella.</p>
-<span class="price">10” $12 • 14” $17</span>
+<p>Signature red sauce and mozzarella.</p>
+<span class="price">10" $12 • 14" $17</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">02</div>
-<h3>Pepperoni Pizza</h3>
+<h3>Pepperoni</h3>
 <p>Crispy curled-edge pepperoni.</p>
-<span class="price">10” $13.50 • 14” $19</span>
+<span class="price">10" $13.50 • 14" $19</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">03</div>
 <h3>Margherita Royale</h3>
-<p>Mozzarella, ricotta, basil, pesto.</p>
-<span class="price">10” $14 • 14” $20</span>
+<p>Ricotta, basil and pesto.</p>
+<span class="price">10" $14 • 14" $20</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">04</div>
 <h3>The OG</h3>
 <p>Smoked pork, cheddar, jalapeños.</p>
-<span class="price">10” $16.50 • 14” $23</span>
+<span class="price">10" $16.50 • 14" $23</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">05</div>
 <h3>The Gentry Garden</h3>
-<p>Vegetable-loaded garlic olive oil pie.</p>
-<span class="price">10” $14.25 • 14” $20.50</span>
+<p>Vegetable-loaded olive oil pie.</p>
+<span class="price">10" $14.25 • 14" $20.50</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">06</div>
 <h3>Kev's Way</h3>
 <p>Loaded signature combination pie.</p>
-<span class="price">10” $16.50 • 14” $23</span>
+<span class="price">10" $16.50 • 14" $23</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">07</div>
 <h3>Fire Roasted Honey</h3>
 <p>Pepperoni finished with hot honey.</p>
-<span class="price">10” $15.50 • 14” $22</span>
+<span class="price">10" $15.50 • 14" $22</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">08</div>
 <h3>Buffalo Chicken</h3>
-<p>Chicken, buffalo, ranch.</p>
-<span class="price">10” $17 • 14” $22</span>
+<p>Chicken, buffalo and ranch.</p>
+<span class="price">10" $17 • 14" $22</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">09</div>
 <h3>Chicken Bacon Ranch</h3>
 <p>Chicken, bacon, ranch.</p>
-<span class="price">10” $17 • 14” $22</span>
+<span class="price">10" $17 • 14" $22</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">10</div>
 <h3>Hot Garlic Pep</h3>
-<p>Garlic butter crust and crispy pepperoni.</p>
-<span class="price">10” $14.25 • 14” $20.50</span>
+<p>Garlic butter crust and pepperoni.</p>
+<span class="price">10" $14.25 • 14" $20.50</span>
 </div>
 
 
-<div class="premium-menu-card">
+<div class="premium-menu-card reveal">
 <div class="menu-label">11</div>
-<h3>Tailor's Choice (BYO)</h3>
-<p>Build your own wood-fired creation.</p>
-<span class="price">10” $12 • 14” $17</span>
+<h3>Build Your Own</h3>
+<p>Start simple and make it yours.</p>
+<span class="price">10" $12 • 14" $17</span>
 </div>
 
 
 </div>
 
 </div>
+
 </section>
 
 
@@ -180,13 +193,16 @@ SIGNATURE FLAMES
 <div class="container menu-columns">
 
 
-<div class="menu-column">
+<div class="menu-column reveal">
 
 <p class="eyebrow">
-FIRE STARTERS
+STARTERS
 </p>
 
-<h2>Starters & Wings</h2>
+<h2>
+Fire Starters
+</h2>
+
 
 <div class="menu-row">
 <div>
@@ -195,12 +211,14 @@ FIRE STARTERS
 <span>$6</span>
 </div>
 
+
 <div class="menu-row">
 <div>
 <h4>Wedge Of The Greene</h4>
 </div>
 <span>$9</span>
 </div>
+
 
 <div class="menu-row">
 <div>
@@ -209,6 +227,7 @@ FIRE STARTERS
 <span>$9</span>
 </div>
 
+
 <div class="menu-row">
 <div>
 <h4>10 Traditional Wings</h4>
@@ -216,15 +235,17 @@ FIRE STARTERS
 <span>$15.50</span>
 </div>
 
+
 <div class="menu-row">
 <div>
-<h4>Wing / Salad Combo</h4>
+<h4>Wing + Salad Combo</h4>
 </div>
 <span>$16.50</span>
 </div>
 
-<p style="margin-top:35px;color:#d4a53a;">
-BBQ • Buffalo • Garlic Parm • Hot Honey • Kickin Bourbon • Cajuun Dry Rub • Honey Habanero
+
+<p class="wing-flavors">
+BBQ • Buffalo • Garlic Parm • Hot Honey • Kickin Bourbon • Cajun Dry Rub • Honey Habanero
 </p>
 
 </div>
@@ -232,14 +253,16 @@ BBQ • Buffalo • Garlic Parm • Hot Honey • Kickin Bourbon • Cajuun Dry 
 
 
 
-
-<div class="menu-column">
+<div class="menu-column reveal">
 
 <p class="eyebrow">
-SWEET ENDINGS
+DESSERTS
 </p>
 
-<h2>Desserts</h2>
+<h2>
+Sweet Endings
+</h2>
+
 
 <div class="menu-row">
 <div>
@@ -247,6 +270,7 @@ SWEET ENDINGS
 </div>
 <span>$14.50</span>
 </div>
+
 
 <div class="menu-row">
 <div>
@@ -256,31 +280,32 @@ SWEET ENDINGS
 </div>
 
 
-<p class="eyebrow" style="margin-top:50px;">
+<p class="eyebrow toppings-label">
 TOPPINGS
 </p>
 
-<h3 style="margin-bottom:20px;">
+<h3 class="subhead">
 Additional Toppings
 </h3>
 
-<p>
+<p class="topping-price">
 $.75 each
 </p>
 
-<p style="margin-top:15px;">
-Pepperoni, sausage, italian sausage, bacon, smoked pork, chicken, tomato, onion, bell peppers, banana peppers, mushrooms, spinach, black olives, green olives, pineapple
+<p class="toppings-copy">
+Pepperoni, sausage, Italian sausage, bacon, smoked pork, chicken, tomato, onion, bell peppers, banana peppers, mushrooms, spinach, black olives, green olives, pineapple.
 </p>
 
-<p style="margin-top:20px;">
+<p class="extra-sauce">
 Extra Ranch / Honey Mustard $1
 </p>
 
 </div>
 
-
 </div>
+
 </section>
+
 
 
 
@@ -293,7 +318,9 @@ Extra Ranch / Honey Mustard $1
 BEVERAGES
 </p>
 
-<h2>Classic Pairings</h2>
+<h2>
+Classic Pairings
+</h2>
 
 <p>
 Coke • Coke Zero • Sprite • Sprite Zero • Cherry Coke • Diet Coke • Mr. Pibb • Sweet Tea • Unsweet Tea
@@ -302,6 +329,7 @@ Coke • Coke Zero • Sprite • Sprite Zero • Cherry Coke • Diet Coke • 
 </div>
 
 </section>
+
 
 
 
@@ -317,16 +345,47 @@ TAKEOUT AVAILABLE
 </p>
 
 <h2>
-Call Ahead & Pick Up Fresh
+Call Ahead.<br>
+Pick Up Fresh.
 </h2>
 
 <p>
-Kitchen closes at 8 PM
+Kitchen closes at 8 PM.
 </p>
 
 <a href="tel:4239630513"
 class="btn btn-gold">
 423.963.0513
+</a>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="section center">
+
+<div class="container narrow">
+
+<p class="eyebrow">
+PRIVATE DOMES
+</p>
+
+<h2>
+Make Dinner<br>
+Feel Bigger.
+</h2>
+
+<p>
+Ask about private dome availability for special evenings.
+</p>
+
+<a href="experience.html"
+class="btn btn-outline">
+Explore Domes
 </a>
 
 </div>
@@ -342,24 +401,29 @@ class="btn btn-gold">
 
 <div>
 <img src="assets/logo.png"
-class="footer-logo">
+class="footer-logo"
+alt="The Gentry">
 </div>
+
 
 <div>
 <h4>Dining Hours</h4>
+
 <p>
-Wed-Thu 4-9<br>
-Fri 11-2 / 4-9<br>
-Sat 12-9
+Wed–Thu 4–9<br>
+Fri 11–2 / 4–9<br>
+Sat 12–9
 </p>
+
 </div>
 
+
 <div>
-<h4>Takeout</h4>
+<h4>Call</h4>
 <p>
-Wed-Thu 4-8<br>
-Fri 11-2 / 4-8<br>
-Sat 12-8
+<a href="tel:4239630513">
+423.963.0513
+</a>
 </p>
 </div>
 

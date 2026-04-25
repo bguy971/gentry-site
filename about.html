@@ -5,11 +5,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 <title>Our Story | The Gentry</title>
+<meta name="description" content="The story behind The Gentry — wood-fired dining, private domes, hospitality and atmosphere.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,19 +18,26 @@
 
 <div class="grain"></div>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
 <div class="container nav-wrap">
 
 <a href="index.html" class="brand">
-<img src="assets/logo.png" alt="">
+<img src="assets/logo.png" alt="The Gentry">
 </a>
 
 <nav>
+
+<button id="mobileToggle" class="mobile-toggle" aria-label="Open Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
 <ul class="nav-links" id="navLinks">
 <li><a href="index.html">Home</a></li>
 <li><a href="menu.html">Menu</a></li>
 <li><a href="experience.html">Domes</a></li>
-<li><a href="about.html">Story</a></li>
+<li><a class="active" href="about.html">Story</a></li>
 <li><a href="visit.html">Visit</a></li>
 <li>
 <a href="tel:4239630513" class="nav-cta">
@@ -38,13 +46,10 @@ Call Now
 </li>
 </ul>
 
-<button id="mobileToggle" class="mobile-toggle">
-☰
-</button>
-
 </nav>
 </div>
 </header>
+
 
 
 
@@ -61,11 +66,11 @@ THE GENTRY STORY
 
 <h1 class="fade-up delay1">
 Built Around Fire,<br>
-Flavor & Gathering Well
+Flavor & Gathering
 </h1>
 
 <p class="hero-copy fade-up delay2">
-A downtown dining concept shaped around atmosphere as much as food.
+A restaurant shaped as much by atmosphere as by what comes out of the oven.
 </p>
 
 </div>
@@ -90,10 +95,11 @@ More Than A Restaurant
 
 <p>
 The Gentry was imagined as something warmer than a typical restaurant —
-a place where wood-fired food,
-private domes,
-patio firelight
-and downtown energy create a night people remember.
+a place where wood-fired food, private domes, patio firelight and downtown energy create something people remember.
+</p>
+
+<p>
+The goal was never simply serving dinner. It was creating a place people want to come back to.
 </p>
 
 </div>
@@ -109,7 +115,8 @@ and downtown energy create a night people remember.
 <div class="container editorial-grid">
 
 <div class="editorial-image reveal">
-<img src="assets/vibe.jpg">
+<img src="assets/vibe.jpg"
+alt="Wood fired cooking">
 </div>
 
 
@@ -120,17 +127,18 @@ THE CRAFT
 </p>
 
 <h2>
-Fire As Ingredient
+Fire As<br>
+An Ingredient
 </h2>
 
 <p>
-Blistered crust.
-Bold ingredients.
-Wood-fired character.
+Blistered crust. Bold ingredients. Wood-fired character.
 
-Everything begins with flame —
-not just as technique,
-but as part of the atmosphere itself.
+Everything starts with flame — not only as technique, but as part of the restaurant’s identity.
+</p>
+
+<p>
+That warmth carries through the food and the atmosphere.
 </p>
 
 </div>
@@ -159,16 +167,19 @@ Lingering
 </h2>
 
 <p>
-From intimate dome evenings
-to patio gatherings around firelight,
-The Gentry was designed for moments that stretch beyond dinner.
+From dome evenings to patio nights around firelight, The Gentry was built for moments that stretch past dinner.
+</p>
+
+<p>
+Slow evenings. Shared food. A place worth staying awhile.
 </p>
 
 </div>
 
 
 <div class="split-photo reveal">
-<img src="assets/vibe2.jpg">
+<img src="assets/vibe2.jpg"
+alt="Restaurant atmosphere">
 </div>
 
 </div>
@@ -184,43 +195,63 @@ The Gentry was designed for moments that stretch beyond dinner.
 <div class="container">
 
 <div class="section-heading center">
+
 <p class="eyebrow">
-THE GENTRY VALUES
+WHAT SHAPES THE EXPERIENCE
 </p>
 
 <h2>
-What Shapes The Experience
+The Gentry Values
 </h2>
+
 </div>
 
 
 <div class="values-grid">
 
+
 <div class="value-card reveal">
 <span>01</span>
 <h3>Craft</h3>
+
 <p>
 Intentional food made with character.
 </p>
 </div>
 
 
+
 <div class="value-card reveal">
 <span>02</span>
 <h3>Atmosphere</h3>
+
 <p>
 Spaces built around warmth and memory.
 </p>
 </div>
 
 
+
 <div class="value-card reveal">
 <span>03</span>
 <h3>Gathering</h3>
+
 <p>
 Dining designed to bring people together.
 </p>
 </div>
+
+
+
+<div class="value-card reveal">
+<span>04</span>
+<h3>Hospitality</h3>
+
+<p>
+Welcoming experiences that feel personal.
+</p>
+</div>
+
 
 </div>
 
@@ -243,12 +274,65 @@ DOWNTOWN HIDDEN GEM
 </p>
 
 <h2>
-An Evening Destination
+A Neighborhood Favorite<br>
+With Boutique Energy
 </h2>
 
 <p>
-A boutique hospitality concept disguised as a neighborhood favorite.
+Casual enough to feel familiar.
+Distinct enough to feel special.
 </p>
+
+</div>
+
+</section>
+
+
+
+
+
+<section class="section dark-section">
+
+<div class="container">
+
+<div class="section-heading center">
+<p class="eyebrow">
+WHY PEOPLE RETURN
+</p>
+
+<h2>
+It Feels Different Here
+</h2>
+</div>
+
+
+<div class="experience-grid-lux">
+
+<div class="experience-card reveal">
+<span>01</span>
+<h3>Wood-Fired Flavor</h3>
+<p>
+A menu people come back for.
+</p>
+</div>
+
+<div class="experience-card reveal">
+<span>02</span>
+<h3>Atmosphere</h3>
+<p>
+Patio nights, domes and firelight.
+</p>
+</div>
+
+<div class="experience-card reveal">
+<span>03</span>
+<h3>Connection</h3>
+<p>
+Built for conversation and gathering.
+</p>
+</div>
+
+</div>
 
 </div>
 
@@ -293,22 +377,31 @@ Plan Your Visit
 
 <div>
 <img src="assets/logo.png"
-class="footer-logo">
+class="footer-logo"
+alt="The Gentry">
 </div>
 
 <div>
 <h4>Story</h4>
-<p>Crafted hospitality</p>
+<p>
+Crafted hospitality.
+Wood-fired character.
+</p>
 </div>
 
 <div>
 <h4>Visit</h4>
-<p>423.963.0513</p>
+<p>
+<a href="tel:4239630513">
+423.963.0513
+</a>
+</p>
 </div>
 
 </div>
 
 </footer>
+
 
 <script src="script.js"></script>
 

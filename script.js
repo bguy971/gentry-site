@@ -1,138 +1,88 @@
-/* MOBILE NAV */
+const toggle = document.getElementById("mobileToggle");
+const nav = document.getElementById("navLinks");
+const header = document.getElementById("siteHeader");
+const cursorGlow = document.getElementById("cursorGlow");
 
-const toggle = document.getElementById('mobileToggle');
-const nav = document.getElementById('navLinks');
+if (toggle && nav) {
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("open");
 
-if(toggle){
-toggle.addEventListener('click',()=>{
-nav.classList.toggle('open');
-});
+    const isOpen = nav.classList.contains("open");
+    toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.classList.toggle("open", isOpen);
+  });
+
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      toggle.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    });
+  });
 }
-
-
-
-/* REVEALS */
 
 const observer = new IntersectionObserver(
-(entries)=>{
-entries.forEach((entry)=>{
-
-if(entry.isIntersecting){
-entry.target.classList.add('active');
-}
-
-});
-},
-{
-threshold:.15
-}
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
 );
 
-document
-.querySelectorAll('.reveal')
-.forEach(el=>{
-observer.observe(el);
+document.querySelectorAll(".reveal").forEach((el) => {
+  observer.observe(el);
 });
 
+const heroZoom = document.querySelector(".hero-bg-zoom");
 
+window.addEventListener("scroll", () => {
+  const y = window.pageYOffset;
 
-/* PARALLAX */
+  if (header) {
+    header.classList.toggle("scrolled", window.scrollY > 80);
+  }
 
-const heroZoom=document.querySelector('.hero-bg-zoom');
+  if (heroZoom) {
+    heroZoom.style.transform = `scale(1.08) translateY(${y * 0.08}px)`;
+  }
+});
 
-window.addEventListener('scroll',()=>{
+document.querySelectorAll(".dish-card, .feature-card, .hours-panel, .premium-menu-card, .experience-card, .value-card, .visit-card").forEach((card, i) => {
+  card.style.transitionDelay = `${i * 70}ms`;
+});
 
-const y=window.pageYOffset;
-
-if(heroZoom){
-heroZoom.style.transform=
-`scale(1.08) translateY(${y*.08}px)`;
+if (cursorGlow) {
+  window.addEventListener("mousemove", (e) => {
+    cursorGlow.style.left = `${e.clientX}px`;
+    cursorGlow.style.top = `${e.clientY}px`;
+  });
 }
 
-document.querySelectorAll('.parallax').forEach(el=>{
-el.style.transform=
-`translateY(${y*.15}px)`;
+document.querySelectorAll(".btn").forEach((btn) => {
+  btn.addEventListener("mousemove", (e) => {
+    if (window.innerWidth < 900) return;
+
+    const rect = btn.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    btn.style.transform = `
+      translateY(-4px)
+      rotateX(${(y - rect.height / 2) / 18}deg)
+      rotateY(${(x - rect.width / 2) / 22}deg)
+    `;
+  });
+
+  btn.addEventListener("mouseleave", () => {
+    btn.style.transform = "translateY(0)";
+  });
 });
 
-});
-
-
-
-/* STAGGER CARDS */
-
-const cards=document.querySelectorAll(
-'.dish-card,.feature-card,.hours-panel'
-);
-
-cards.forEach((card,i)=>{
-card.style.transitionDelay=
-`${i*90}ms`;
-});
-
-
-
-/* SUBTLE CURSOR GLOW */
-
-const glow=document.createElement('div');
-glow.classList.add('cursor-glow');
-
-document.body.appendChild(glow);
-
-window.addEventListener('mousemove',(e)=>{
-
-glow.style.left=e.clientX+'px';
-glow.style.top=e.clientY+'px';
-
-});
-
-
-
-/* HEADER SHRINK */
-
-const header=document.querySelector('.site-header');
-
-window.addEventListener('scroll',()=>{
-
-if(window.scrollY>80){
-header.classList.add('scrolled');
-}
-else{
-header.classList.remove('scrolled');
-}
-
-});
-
-
-
-/* FLOATING BUTTON MOTION */
-
-document.querySelectorAll('.btn').forEach(btn=>{
-
-btn.addEventListener('mousemove',(e)=>{
-
-const rect=btn.getBoundingClientRect();
-
-const x=e.clientX-rect.left;
-const y=e.clientY-rect.top;
-
-btn.style.transform=
-`translateY(-4px) rotateX(${(y-20)/14}deg)
-rotateY(${(x-60)/18}deg)`;
-
-});
-
-btn.addEventListener('mouseleave',()=>{
-
-btn.style.transform='translateY(0)';
-
-});
-
-});
-
-
-
-/* OPTIONAL CINEMATIC PAGE FADE */
-
-window.addEventListener('load',()=>{
-document.body.classList.add('loaded');
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
 });
